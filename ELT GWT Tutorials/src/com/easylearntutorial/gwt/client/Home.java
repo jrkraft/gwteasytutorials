@@ -5,11 +5,14 @@ import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RootPanel;
 
 public class Home implements EntryPoint {
+	
+	private LittleForm form = new LittleForm();
 
 	public void onModuleLoad() {
 		// TODO Auto-generated method stub
 
-		RootPanel.get().add(new Label("Hello world!!!!!!!!"));
+		form.setText("new text");
+		RootPanel.get().add((form));
 		
 		
 		
