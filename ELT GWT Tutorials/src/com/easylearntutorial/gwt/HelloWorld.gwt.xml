@@ -3,5 +3,8 @@
 <module rename-to="Hello">
 	<inherits name="com.google.gwt.user.User" />
 	<source path="client" />
+	<source path="shared" />
 	<entry-point class="com.easylearntutorial.gwt.client.Home"></entry-point>
+	
+	<add-linker name="xsiframe" />
 </module>
