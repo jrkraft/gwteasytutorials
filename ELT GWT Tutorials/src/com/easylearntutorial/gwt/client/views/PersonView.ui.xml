@@ -7,5 +7,6 @@
 		
 		<g:Label  ui:field="name" />
 		<g:Button  ui:field="button" />
+		<g:Button  ui:field="button2" />
 	</g:HTMLPanel>
 </ui:UiBinder> 

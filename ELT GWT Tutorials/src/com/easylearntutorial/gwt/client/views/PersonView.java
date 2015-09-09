@@ -2,6 +2,7 @@ package com.easylearntutorial.gwt.client.views;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.shared.SimpleEventBus;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
@@ -14,6 +15,7 @@ import com.easylearntutorial.gwt.client.presenters.PersonPresenter;
 public class PersonView extends Composite implements PersonPresenter.Display {
 	
 	private PersonPresenter personPresenter;
+
 
 	private static PersonViewUiBinder uiBinder = GWT
 			.create(PersonViewUiBinder.class);
@@ -29,6 +31,7 @@ public class PersonView extends Composite implements PersonPresenter.Display {
 Label name;
 @UiField
 Button button;
+
 
 public PersonView(String firstname) {
 	initWidget(uiBinder.createAndBindUi(this));
@@ -53,4 +56,5 @@ public void setPresenter(PersonPresenter presenter) {
 	this.personPresenter = presenter;
 	
 }
+
 }
